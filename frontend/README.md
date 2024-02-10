@@ -1,6 +1,6 @@
 # frontend
 
-> A Vue.js and Spring project
+> A Vue.js project
 
 ## Build Setup
 

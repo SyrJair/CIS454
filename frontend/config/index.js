@@ -45,7 +45,7 @@ module.exports = {
 
   build: {
     // Template for index.html
-    index: path.resolve(__dirname, '../target/dist/index.html'), //added target folder to these two lines, so if there are errors, could be that
+    index: path.resolve(__dirname, '../target/dist/index.html'),
 
     // Paths
     assetsRoot: path.resolve(__dirname, '../target/dist'),
