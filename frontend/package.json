@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "description": "Front end for MooMeditation",
+  "description": "A Vue.js and Spring project",
   "author": "tipaek <tax2farm@gmail.com>",
   "private": true,
   "scripts": {

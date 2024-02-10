@@ -1,6 +1,6 @@
 # frontend
 
-> Front end for MooMeditation
+> A Vue.js and Spring project
 
 ## Build Setup
 
