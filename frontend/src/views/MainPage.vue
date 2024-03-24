@@ -17,10 +17,10 @@
 
 </template>
 <script>
-    function removeButton()
-    {
-        document.getElementById("play-button-section").style.display="None";
-    }
+    //function removeButton()
+    //{
+    //   document.getElementById("play-button-section").style.display="None";
+    //}
 </script>
 <style>
     #play-button-section 
@@ -37,10 +37,7 @@
         list-style:none;
         display:none;
     }
-    .expandable-menu-section 
-    {
-        
-    }
+    
 
 
 </style>

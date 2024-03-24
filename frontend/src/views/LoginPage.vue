@@ -6,12 +6,13 @@
     <section class="titleScreen" id="top">
         <h1 id="title">Moo Meditations</h1>
         <div id="loginGo">
-            <a href="#login"> <h2 id="loginButton">Login</h2> </a>
+            <a href="#loginPointer"> <h2 id="loginButton">Login</h2> </a>
         </div>
         
     </section>
     <div class="container">
         <section class="loginSection">
+            <a id="loginPointer"></a>
             <div class="top">
                 <h3 id="login">Login</h3>
             </div>
@@ -40,15 +41,24 @@
                         <div class="make">
                             <a href="#">Make an Account</a>
                         </div>
-                        
                     </div>
+                    <router-link to="/main">Temp thing: go MainPage</router-link>
                 </form>
             </div>
         </section>
     </div>
 </template>
 <script>
-
+   export default {
+    methods: {
+        login() {
+        // login logic here...
+        // if login is successful, navigate to MainPage
+        this.$router.push('/main');
+    }
+  }
+}
+     
 </script>
 <style>
     /* https://www.canva.com/learn/website-color-schemes/ #18 color scheme for now */
@@ -132,6 +142,11 @@
     .container 
     {
         padding: 50vh 0 50vh 0;
+    }
+    #loginPointer 
+    {
+        position:relative;
+        top:-5vh;
     }
     .loginSection 
     {

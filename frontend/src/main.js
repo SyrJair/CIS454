@@ -1,6 +1,20 @@
 import { createApp } from 'vue'
-//import App from './App.vue'
-import LoginPage from './views/LoginPage.vue'
+import {createRouter, createWebHistory} from 'vue-router'
 
-//createApp(App).mount('#app')
-createApp(LoginPage)
+import LoginPage from './views/LoginPage.vue'
+import MainPage from './views/MainPage.vue'
+
+// making the routes
+const routes = [
+    {path: '/main', component:MainPage},
+    {path: '/', component:LoginPage}
+]
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
+})
+
+// initializing the app
+createApp(LoginPage).use(router).mount('#app')
+
