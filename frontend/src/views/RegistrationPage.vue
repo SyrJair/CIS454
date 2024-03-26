@@ -1,45 +1,35 @@
 <template>
-    <a href="#loginSection" class="skip" tabindex="-1">Skip to Content</a>
+    <!-- this page is the same as signupPage except with a different form. I imagine there are more efficient ways of implementing this, but this is a small case. -->
+    <a href="#signupSection" class="skip" tabindex="-1">Skip to Content</a>
     <div class="parallax">
         <img src="../assets/tempLoginBackground.jpg" alt="peaceful sunset forest landscape">
     </div>
-    <section class="titleScreen" id="top">
-        <h1 id="title">Moo Meditations</h1>
-        <div id="loginGo">
-            <a href="#loginPointer"> <h2 id="loginButton">Login</h2> </a>
-        </div>
-        
-    </section>
+    
     <div class="container">
-        <section class="loginSection">
-            <a id="loginPointer"></a>
+        <section class="signupSection">
+            <a id="signupPointer"></a>
             <div class="top">
-                <h3 id="login">Login</h3>
+                <h3 id="signup">Sign Up</h3>
             </div>
             <div class="bottom">
-                <h3>Have an account?</h3>
-                <form action="#" class="signin-form" @submit.prevent="login">
+                <h3>Register an Account</h3>
+                <form action="#" class="signup-form" @submit.prevent="register">
                     <div class="userPass formItem" id="usernameInput">
                         <input type="text" placeholder="Username" required>
                     </div>
                     <div class="userPass formItem" id="passwordInput">
                         <input type="text" placeholder="Password" required>
                     </div>
+                    <div class="userPass formItem" id="emailInput">
+                        <input type="email" placeholder="Email" required>
+                    </div>
                     <div class="formItem">
-                        <button type="submit" id="loginSubmit">Sign In</button>
+                        <button type="submit" id="signupSubmit">Sign Up</button>
                     </div>
-                    <div class="formItem" for="rememberCheck">
-                        <label for="rememberCheck">
-                            <input type="checkbox" id="rememberCheck">
-                            <h5 id="rememberText">Remember Me</h5>
-                        </label>
-                    </div>
+                    
                     <div class="accountAlternative">
-                        <div class="forgot">
-                            <a href="#">Forgot Password</a>
-                        </div>
                         <div class="make">
-                            <router-link to="/register">Make an Account</router-link>
+                            <router-link to="/login">I already have an account</router-link>
                         </div>
                     </div>
                     
@@ -51,10 +41,10 @@
 <script>
    export default {
     methods: {
-        login() {
-        // login logic here...
-        // if login is successful, navigate to MainPage
-        this.$router.push('/main');
+        register() {
+        // register logic here...
+        // if registration is successful, navigate to signupPage
+        this.$router.push('/login');
     }
   }
 }
@@ -93,62 +83,17 @@
         width:100vw;
     }
 
-    /* TITLE SCREEN */
-    .titleScreen
-    {
-        text-align:center;
-        display:flex;
-        align-items: center;
-        flex-direction:column;
-        justify-content:center;
-        z-index:2;
-        position:relative;
-        margin-top:-66%;
-        width:80%;
-        padding-bottom:8%;
-        border: 2px solid #0F1626;
-        height:100vh;
-    }
-    #title 
-    {
-        margin-top:10%;
-        font-size:8em;
-        font-weight:bold;
-        background-color: rgb(171, 152, 122, 0.5);
-        color: #f5f5f5;
-        -webkit-text-stroke: 1.2px #0F1626;
-        border-radius:20px;
-        padding: 0px 10px 0px 10px;
-        border: 2px solid black;
-    }
-    #loginGo 
-    {
-        margin-top: 5%;
-        font-size:2.5em;
-        background-color: rgb(15, 22, 38, 0.5);
-        border-radius:20px;
-        padding: 0px 18px 0px 18px;
-        border: 1px solid black;
-    }
-    #loginGo a 
-    {
-        text-decoration: none;
-        text-align: center;
-        color: #f5f5f5c1;
-
-    }
-
     /* FORM */
     .container 
     {
         padding: 50vh 0 50vh 0;
     }
-    #loginPointer 
+    #signupPointer 
     {
         position:relative;
         top:-5vh;
     }
-    .loginSection 
+    .signupSection 
     {
         text-align: center;
         z-index:2;
@@ -161,6 +106,7 @@
         padding: 10% 0 10% 0;
         border: 1px solid #FF533D;
         border-radius:3px;
+        margin-top:-180vh;
     }
     .top h3 
     {
@@ -205,20 +151,6 @@
         background-color: #AB987A;
         
     }
-    #rememberText
-    {
-        margin-top: -2.1em;
-        text-align:left;
-        margin-left:20px;
-        font-weight:100;
-        color:#AB987A;
-        cursor:pointer;
-    }
-    
-    #rememberCheck 
-    {
-        margin-left: -29em;
-    }
 
     .accountAlternative
     {
@@ -238,7 +170,7 @@
         width: 200px;
         margin-top:5%;
     }
-    #loginSubmit 
+    #signupSubmit 
     {
         width:100px;
         border: 2px solid #FF533D;
