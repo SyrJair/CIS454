@@ -17,6 +17,7 @@
 
 </template>
 <script>
+    
     //function removeButton()
     //{
     //   document.getElementById("play-button-section").style.display="None";

@@ -10,6 +10,7 @@
         </div>
         
     </section>
+    
     <div class="container">
         <section class="loginSection">
             <a id="loginPointer"></a>
@@ -39,7 +40,7 @@
                             <a href="#">Forgot Password</a>
                         </div>
                         <div class="make">
-                            <router-link to="/register">Make an Account</router-link>
+                            <RouterLink to="/register">Make an Account</RouterLink>
                         </div>
                     </div>
                     
@@ -49,12 +50,17 @@
     </div>
 </template>
 <script>
+    import { RouterLink  } from 'vue-router';
+
    export default {
+    components: {
+        RouterLink
+    },
     methods: {
         login() {
         // login logic here...
         // if login is successful, navigate to MainPage
-        this.$router.push('/main');
+        this.$router.go('/main');
     }
   }
 }

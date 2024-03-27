@@ -29,7 +29,7 @@
                     
                     <div class="accountAlternative">
                         <div class="make">
-                            <router-link to="/login">I already have an account</router-link>
+                            <RouterLink to="/">I already have an account</RouterLink>
                         </div>
                     </div>
                     
@@ -39,12 +39,16 @@
     </div>
 </template>
 <script>
+    import { RouterLink } from 'vue-router';
    export default {
+    components: {
+        RouterLink
+    },
     methods: {
         register() {
         // register logic here...
         // if registration is successful, navigate to signupPage
-        this.$router.push('/login');
+        this.$router.go('/');
     }
   }
 }
