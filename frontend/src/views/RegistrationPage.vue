@@ -75,8 +75,13 @@
     {
         position:sticky;
         top:0;
-        bottom:0;
         z-index:1;
+        background-image:url("../assets/tempLoginBackground.jpg");
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size: 100% 100%;
+        width:100vw;
+        height:100vh;
 
     }
     .parallax img 
@@ -84,7 +89,7 @@
         height:max-content;
         filter:blur(5px) saturate(120%) contrast(120%);
         object-fit:cover;
-        width:100vw;
+        display:none;
     }
 
     /* FORM */
@@ -110,7 +115,7 @@
         padding: 10% 0 10% 0;
         border: 1px solid #FF533D;
         border-radius:3px;
-        margin-top:-180vh;
+        margin-top:-168vh;
     }
     .top h3 
     {
