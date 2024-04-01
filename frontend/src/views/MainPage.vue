@@ -10,11 +10,11 @@
         <!-- new code: MooBucks and Minutes boxes -->
         <div class="info-boxes"> <!-- new code -->
             <div class="currency-box">MooBucks Balance:</div> <!-- new code -->
-            <div class="minutes-box">Minutes Meditated:</div> <!-- new code -->
+            <div class="minutes-box">Meditation Minutes:</div> <!-- new code -->
         </div> <!-- new code -->
 
         <div class="expandable-menu-section">
-            <div>icon, insert and edit later</div>
+            <div>TBD icon placeholder</div>
             <ul class="menu">
                 <li>Meditate</li>
                 <li>Store</li>
@@ -22,7 +22,7 @@
         </div>
         
         <div class="cow">
-            this is the cow
+            Cow here (TBD)
         </div>
     </div>
 </template>
