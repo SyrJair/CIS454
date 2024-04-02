@@ -10,7 +10,7 @@
         </div>
         <div class="main-layout">
             <div class="main-text">
-                <h1>Welcome Back (username)</h1>
+                <h1>Welcome Back, (username)!</h1>
             </div>
             <div class="cow-section">
                 <!-- cow section goes here -->
@@ -69,10 +69,15 @@
    
 
     /* LEFT LAYOUT */
+    /* added 4 lines of code after background-color to add background into left-layout WP */
     .left-layout 
     {
         justify-content:space-between;
-        background-color:grey;
+        background-color:rgb(255, 255, 255);
+        background-image: url(C:\Users\wtpar\OneDrive\Pictures\pixelcloudleftactual.png);
+        background-size: 100% 100%; 
+        background-repeat: no-repeat; 
+        background-position: left center;
     }
     .username-section 
     {
@@ -96,10 +101,15 @@
     }
 
     /* RIGHT LAYOUT */
+    /* added 4 lines of code after background-color to add background into right-layout WP */
     .right-layout 
     {
         justify-content:space-between;
-        background-color:red;
+        background-color:rgb(255, 255, 255);
+        background-image: url(C:\Users\wtpar\OneDrive\Pictures\cloudartrightactual.png);
+        background-size: 100% 100%; 
+        background-repeat: no-repeat; 
+        background-position: right center;
     }
     .shop-section 
     {
