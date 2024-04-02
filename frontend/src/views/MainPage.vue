@@ -17,10 +17,10 @@
             </div>
             <div class="metrics-section">
                 <div class="balance-section">
-                    <h3>Balance</h3>
+                    <h3>MooBucks Balance:</h3>
                 </div>
                 <div class="minutes-section">
-                    <h3>Minutes</h3>
+                    <h3>Minutes Meditated:</h3>
                 </div>
             </div>
         </div>
@@ -59,7 +59,7 @@
     }
     .left-layout, .right-layout 
     {
-        width:20vw;
+        width:22vw;
         padding: 3em 0 3em 0;
     }
     h3 
