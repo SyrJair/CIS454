@@ -33,10 +33,9 @@
     \
 </template>
 <script>
-    
     //function removeButton()
     //{ tbd on this one
-    // document.getElementById("play-button-section").style.display="None"; // idk why this thing is displaying blue all of a sudden?
+    // document.getElementById("play-button-section").style.display="None"; 
     //}
 </script> 
 <style>
