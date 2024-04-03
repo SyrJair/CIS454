@@ -5,7 +5,7 @@
                 <h3 id="username">Username goes here</h3>
             </div>
             <div class="logout-section">
-                <h3 id="logout">Logout</h3>
+                <button id="logout" class="button">Logout</button> <!-- Logout button -->
             </div>
         </div>
         <div class="main-layout">
@@ -26,7 +26,7 @@
         </div>
         <div class="right-layout">
             <div class="shop-section">
-                <h3 id="shop">Shop</h3>
+                <button id="shop" class="button">Shop</button> <!-- Shop button -->
             </div>
         </div>
     </div>
@@ -49,7 +49,6 @@
         display:flex;
         justify-content:space-apart;
         width:100%;
-
     }
     .left-layout, .right-layout, .main-layout 
     {
@@ -67,9 +66,7 @@
         padding: 2em 0 2em 0;
     }
    
-
     /* LEFT LAYOUT */
-    /*  */
     .left-layout 
     {
         justify-content:space-between;
@@ -87,35 +84,14 @@
         justify-content:center;
         flex-direction:column;
     }
-    .logout-section 
-    {
-        background-color:black;
-        width: 50%;
-        height:8%;
-        display:flex;
-        justify-content:center;
-        text-align:center;
-        flex-direction:column;
-    }
 
     /* RIGHT LAYOUT */
-    /* */
     .right-layout 
     {
         justify-content:space-between;
         background-image: url('../assets/cloud_RIGHT.jpg'); 
         background-size: cover; 
         background-repeat: no-repeat; 
-        
-    }
-    .shop-section 
-    {
-        background-color:black;
-        width:50%;
-        height:10%;
-        display:flex;
-        justify-content:center;
-        flex-direction:column;
     }
 
     /* MAIN SECTION */
@@ -155,5 +131,26 @@
         height:60%;
     }
     
+    /* Button styling */
+    .button {
+        background-color: #333; 
+        color: white; 
+        padding: 1rem 2rem; 
+        font-size: 1rem; 
+        border: none; 
+        border-radius: 0.5rem; 
+        cursor: pointer; 
+        transition: background-color 0.3s ease; 
+        text-align: center;
+        display: block; 
+        margin: 1rem auto; 
+    }
 
-</style> 
+    /* Button hover effect (darken button) */
+    .button:hover {
+        background-color: #555; 
+    }
+
+    
+
+</style>
