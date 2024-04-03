@@ -1,7 +1,6 @@
 <template>
     <div class="overall-page">
         <div class="left-layout">
-            <img src="../assets/cloud_LEFT.jpg" alt="left side cloud bg">
             <div class="username-section">
                 <h3 id="username">Username goes here</h3>
             </div>
@@ -26,7 +25,6 @@
             </div>
         </div>
         <div class="right-layout">
-            <img src="../assets/cloud_RIGHT.jpg" alt="right side cloud bg">
             <div class="shop-section">
                 <h3 id="shop">Shop</h3>
             </div>
@@ -71,11 +69,11 @@
    
 
     /* LEFT LAYOUT */
-    /* added 4 lines of code after background-color to add background into left-layout WP */
+    /*  */
     .left-layout 
     {
         justify-content:space-between;
-        background-color:rgb(255, 255, 255);
+        background-color:rgba(48, 45, 45, 0.775);
         
     }
     .username-section 
@@ -100,11 +98,11 @@
     }
 
     /* RIGHT LAYOUT */
-    /* added 4 lines of code after background-color to add background into right-layout WP */
+    /* */
     .right-layout 
     {
         justify-content:space-between;
-        background-color:rgb(255, 255, 255);
+        background-color:rgba(48, 45, 45, 0.775);
         
     }
     .shop-section 
