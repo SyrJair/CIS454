@@ -1,6 +1,7 @@
 <template>
     <div class="overall-page">
         <div class="left-layout">
+            <img src="../assets/cloud_LEFT.jpg" alt="left side cloud bg">
             <div class="username-section">
                 <h3 id="username">Username goes here</h3>
             </div>
@@ -25,6 +26,7 @@
             </div>
         </div>
         <div class="right-layout">
+            <img src="../assets/cloud_RIGHT.jpg" alt="right side cloud bg">
             <div class="shop-section">
                 <h3 id="shop">Shop</h3>
             </div>
@@ -74,10 +76,7 @@
     {
         justify-content:space-between;
         background-color:rgb(255, 255, 255);
-        background-image: url(C:\Users\wtpar\OneDrive\Pictures\pixelcloudleftactual.png);
-        background-size: 100% 100%; 
-        background-repeat: no-repeat; 
-        background-position: left center;
+        
     }
     .username-section 
     {
@@ -106,10 +105,7 @@
     {
         justify-content:space-between;
         background-color:rgb(255, 255, 255);
-        background-image: url(C:\Users\wtpar\OneDrive\Pictures\cloudartrightactual.png);
-        background-size: 100% 100%; 
-        background-repeat: no-repeat; 
-        background-position: right center;
+        
     }
     .shop-section 
     {
