@@ -106,7 +106,7 @@
     {
         justify-content:space-between;
         background-color:rgb(255, 255, 255);
-        background-image: url(C:\Users\wtpar\OneDrive\Desktop\CIS454\CIS454\cloudartrightactual.png);
+        background-image: url(C:\Users\wtpar\OneDrive\Pictures\cloudartrightactual.png);
         background-size: 100% 100%; 
         background-repeat: no-repeat; 
         background-position: right center;
