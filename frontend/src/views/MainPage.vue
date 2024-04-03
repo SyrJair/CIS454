@@ -73,8 +73,9 @@
     .left-layout 
     {
         justify-content:space-between;
-        background-color:rgba(48, 45, 45, 0.775);
-        
+        background-image: url('../assets/cloud_LEFT.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
     }
     .username-section 
     {
@@ -102,7 +103,9 @@
     .right-layout 
     {
         justify-content:space-between;
-        background-color:rgba(48, 45, 45, 0.775);
+        background-image: url('../assets/cloud_RIGHT.jpg'); 
+        background-size: cover; 
+        background-repeat: no-repeat; 
         
     }
     .shop-section 
