@@ -1,5 +1,5 @@
 <template>
-    <a href="#loginSection" class="skip" tabindex="-1">Skip to Content</a>
+    <a href="#loginSection" class="skip" tabindex="-1">Skip to Content</a> 
     <div class="parallax">
         <img src="../assets/tempLoginBackground.jpg" alt="peaceful sunset forest landscape">
     </div>
@@ -87,8 +87,13 @@
     {
         position:sticky;
         top:0;
-        bottom:0;
         z-index:1;
+        background-image:url("../assets/tempLoginBackground.jpg");
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size: 100% 100%;
+        width:100vw;
+        height:100vh;
 
     }
     .parallax img 
@@ -96,7 +101,7 @@
         height:max-content;
         filter:blur(5px) saturate(120%) contrast(120%);
         object-fit:cover;
-        width:100vw;
+        display:none;
     }
 
     /* TITLE SCREEN */
@@ -109,7 +114,7 @@
         justify-content:center;
         z-index:2;
         position:relative;
-        margin-top:-66%;
+        margin-top:-53%;
         width:80%;
         padding-bottom:8%;
         border: 2px solid #0F1626;
