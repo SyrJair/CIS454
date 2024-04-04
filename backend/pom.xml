@@ -81,6 +81,14 @@
 			<scope>runtime</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+
 	
    <dependency>
      <groupId>com.wshlfx.uniboot</groupId>
@@ -93,13 +101,6 @@
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-	
-   <dependency>
-     <groupId>com.wshlfx.uniboot</groupId>
-     <artifactId>uniboot-security</artifactId>
-     <version>1.0.14</version>
-   </dependency>
-
 
  			<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
