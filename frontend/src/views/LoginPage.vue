@@ -72,6 +72,10 @@
 
     /* GENERAL */
     .skip {display: none;}
+    html 
+    {
+        height:100%;
+    }
     * 
     {
         font-family: "Lato", Arial, sans-serif;
@@ -87,13 +91,13 @@
     {
         position:sticky;
         top:0;
+        bottom:0;
         z-index:1;
         background-image:url("../assets/tempLoginBackground.jpg");
         background-repeat:no-repeat;
         background-position:center;
         background-size: 100% 100%;
-        width:100vw;
-        height:100vh;
+        height:100%;
 
     }
     .parallax img 
