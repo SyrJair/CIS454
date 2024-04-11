@@ -26,6 +26,11 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
@@ -33,7 +38,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -88,14 +92,18 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<dependency>
+    		<groupId>jakarta.xml.bind</groupId>
+    		<artifactId>jakarta.xml.bind-api</artifactId>
+    		<version>2.3.2</version>
+		</dependency>
 
-	
-   <dependency>
-     <groupId>com.wshlfx.uniboot</groupId>
-     <artifactId>uniboot-security</artifactId>
-     <version>1.2.50</version>
-   </dependency>
- </dependencies>
+		<dependency>
+			<groupId>com.wshlfx.uniboot</groupId>
+			<artifactId>uniboot-security</artifactId>
+			<version>1.2.50</version>
+		</dependency>
+		</dependencies>
 
 	<build>
 		<plugins>
