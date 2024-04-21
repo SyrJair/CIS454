@@ -40,15 +40,12 @@
 </script> 
 <style>
     /* All STUFF */
-    * 
-    {
-        max-height:100vh;
-    }
     .overall-page 
     {
         display:flex;
         justify-content:space-apart;
         width:100%;
+        max-height:100vh;
     }
     .left-layout, .right-layout, .main-layout 
     {

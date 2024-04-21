@@ -100,7 +100,7 @@
     #signupPointer 
     {
         position:relative;
-        top:-5vh;
+        top:-10vh;
     }
     .signupSection 
     {
@@ -112,7 +112,7 @@
         flex-direction:column;
         justify-content:space-evenly;
         width:40%;
-        padding: 10% 0 10% 0;
+        padding: 5% 0 5% 0;
         border: 1px solid #FF533D;
         border-radius:3px;
         margin-top:-168vh;
@@ -139,12 +139,10 @@
         font-size:2em;
         color:#f5f5f5;
         font-weight:lighter;
-        padding-bottom:20px;
     }
     .bottom form 
     {
         border-top: 2px solid #0F1626;
-        padding-top:20px;
     }
     .formItem 
     {
