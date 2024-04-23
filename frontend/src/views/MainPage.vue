@@ -107,7 +107,7 @@
     }
     .main-text 
     {
-        background-color:red;
+        background-color:pink;
         width:100%;
         height:15%;
         display:flex;
@@ -124,7 +124,7 @@
     }
     .cow-section 
     {
-        background-color:pink;
+        background-color:black;
         z-index:5;
         width:110%;
         height:50%;
