@@ -1,6 +1,7 @@
 <template>
     <div id="entire-meditation-page">
         <h1 id="meditation-title">Meditate</h1>
+        <RouterLink to="/" id="logout">Logout</RouterLink>
         <RouterLink to="/Main" id="home-button">Home</RouterLink>
 
         <carousel :items-to-show="1.5" :wrap-around="true" :autoplay="2000" id="carousel">
@@ -59,6 +60,18 @@
         text-decoration:none;
         color:white;
         font-weight:bold;
+    }
+
+    #logout 
+    {
+        position:absolute;
+        z-index: 4;
+        margin-left: 93%;
+        margin-top:1%;
+        text-decoration:none;
+        color:white;
+        font-weight:bold;
+        font-size:1em;
     }
     
     #carousel
