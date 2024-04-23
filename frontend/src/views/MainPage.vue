@@ -13,6 +13,8 @@
                 <h1>Welcome Back, (username)!</h1>
             </div>
             <div class="cow-section">
+                <img id="cow" src="../assets/PixelCowCloud1.jpg">
+                <RouterLink to="/Meditation" id="meditation-button">Meditate</RouterLink>
                 <!-- cow section goes here -->
             </div>
             <div class="metrics-section">
@@ -43,9 +45,12 @@
     .overall-page 
     {
         display:flex;
-        justify-content:space-apart;
+        justify-content:space-between;
         width:100%;
         max-height:100vh;
+        z-index:1;
+        background-repeat:no-repeat;
+        background-size:cover;
     }
     .left-layout, .right-layout, .main-layout 
     {
@@ -55,7 +60,7 @@
     }
     .left-layout, .right-layout 
     {
-        width:22vw;
+        width:30%;
         padding: 3em 0 3em 0;
     }
     h3 
@@ -67,43 +72,49 @@
     .left-layout 
     {
         justify-content:space-between;
-        background-image: url('../assets/cloud_LEFT.jpg'); 
-        background-size: cover; 
         background-repeat: no-repeat; 
+        background-image: url('../assets/cloud_LEFT.jpg'); 
+        background-size:cover;
     }
     .username-section 
     {
         background-color:black;
-        width: 70%;
+        width: 50%;
         height:13%;
         text-align:center;
         display:flex;
         justify-content:center;
         flex-direction:column;
+        border-radius:5%;
     }
 
     /* RIGHT LAYOUT */
     .right-layout 
     {
         justify-content:space-between;
-        background-image: url('../assets/cloud_RIGHT.jpg'); 
         background-size: cover; 
         background-repeat: no-repeat; 
+        background-image: url('../assets/cloud_RIGHT.jpg'); 
+
     }
 
     /* MAIN SECTION */
     .main-layout 
     {
         justify-content:space-evenly;
+        background-color:pink;
+        width:40vw;
     }
     .main-text 
     {
-        background-color:pink;
+        background-color:red;
         width:100%;
         height:15%;
         display:flex;
         justify-content:center;
         flex-direction:column;
+        border-bottom: 2px solid black;
+        border-top: 2px solid black;
     }
     .metrics-section 
     {
@@ -117,6 +128,26 @@
         z-index:5;
         width:110%;
         height:50%;
+        margin: 0 auto 0 auto;
+    }
+    #cow 
+    {
+        width:80%;
+        height:60%;
+        left: 9.5%;
+        position:absolute;
+        z-index:5;
+    }
+    #meditation-button 
+    {
+        font-size:3em;
+        text-align:center;
+        text-decoration:none;
+        top:80%;
+        left:35%;
+        color:white;
+        padding:5px;
+        background-color:black;
     }
     .balance-section, .minutes-section 
     {

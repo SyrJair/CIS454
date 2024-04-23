@@ -115,7 +115,7 @@
         padding: 5% 0 5% 0;
         border: 1px solid #FF533D;
         border-radius:3px;
-        margin-top:-168vh;
+        margin-top:-158vh;
     }
     .top h3 
     {
@@ -127,6 +127,10 @@
     {
         z-index: 2;
         margin-top:10%;
+    }
+    .bottom 
+    {
+        margin-top: 5%;
     }
     .top 
     {
