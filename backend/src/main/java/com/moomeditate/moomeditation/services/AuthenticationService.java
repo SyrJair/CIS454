@@ -1,6 +1,5 @@
 package com.moomeditate.moomeditation.services;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -12,7 +11,6 @@ public class AuthenticationService {
 
     private final AuthenticationManager authenticationManager;
 
-    @Autowired
     public AuthenticationService(AuthenticationManager authenticationManager) {
         this.authenticationManager = authenticationManager;
     }

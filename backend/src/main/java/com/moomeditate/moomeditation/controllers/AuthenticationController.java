@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.security.Keys;
-
 import java.security.Key;
 import java.util.Date;
 
@@ -24,7 +23,7 @@ public class AuthenticationController {
     @Autowired
     private PasswordEncoder passwordEncoder;
 
-    @PostMapping("/signup")
+    @PostMapping("/register")
     public ResponseEntity<?> registerUser(@RequestParam String username, @RequestParam String email, @RequestParam String password) {
         if (userService.existsByUsername(username)) {
             return ResponseEntity
@@ -43,7 +42,7 @@ public class AuthenticationController {
         return ResponseEntity.ok("User registered successfully!");
     }
 
-    @PostMapping("/signin")
+    @PostMapping("/login")
     public ResponseEntity<?> authenticateUser(@RequestParam String username, @RequestParam String password) {
 
         User user = userService.findByUsername(username);
@@ -77,5 +76,6 @@ public class AuthenticationController {
     
         return jwt;
     }
-    
+
 }
+

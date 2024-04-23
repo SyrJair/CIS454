@@ -26,11 +26,12 @@ public class SecurityConfig {
     public SecurityFilterChain moomeditateSecurityFilterChain(HttpSecurity http) throws Exception {
         http
             .authorizeHttpRequests((requests) -> requests
-                .requestMatchers("/", "/home").permitAll()
+                .requestMatchers("/", "/home", "/api/auth/register").permitAll()
                 .anyRequest().authenticated()
             )
             .formLogin((form) -> form
-                .loginPage("/login")
+                .loginPage("/api/auth/login")
+                .loginProcessingUrl("/api/auth/login")
                 .permitAll()
             )
             .logout((logout) -> logout.permitAll());
