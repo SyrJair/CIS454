@@ -6,17 +6,36 @@
       <h1 id="shop-title">MooMeditation Shop</h1>
       <RouterLink to="/Main" id="home-button" class="button">Home</RouterLink>
       
-      <!-- Container for displaying shop items dynamically -->
+      <!-- Container for displaying shop items statically -->
       <div id="item-container">
-        <!-- Loop through items and display each one as a shop item -->
-        <div class="shop-item" v-for="item in items" :key="item.id">
-          <img :src="item.image" :alt="item.name" class="item-image">
+        <!-- Static display of shop items -->
+        <div class="shop-item">
+          <img src="../assets/pixelHat.jpg" alt="Comfy Lounge Chair" class="item-image">
           <div class="item-info">
-            <h3>{{ item.name }}</h3>
-            <p>{{ item.description }}</p>
-            <p>{{ formatNumber(item.price) }}</p>
-            <!-- Button to add item to cart -->
-            <button @click="addToCart(item)">Add to Cart</button>
+            <h3>Bean Bag Chair</h3>
+            <p>A comfy cushion for meditation.</p>
+            <p>$30.00</p>
+            <button @click="addToCart({ id: 1, name: 'Comfy Lounge Chair', price: 30 })">Add to Cart</button>
+          </div>
+        </div>
+  
+        <div class="shop-item">
+          <img src="../assets/pixelBasket.jpg" alt="Picnic Basket" class="item-image">
+          <div class="item-info">
+            <h3>Picnic Basket</h3>
+            <p>Soothing aroma for meditation.</p>
+            <p>$5.00</p>
+            <button @click="addToCart({ id: 2, name: 'Picnic Basket', price: 5 })">Add to Cart</button>
+          </div>
+        </div>
+  
+        <div class="shop-item">
+          <img src="../assets/pixelHat.jpg" alt="Bucket Hat" class="item-image">
+          <div class="item-info">
+            <h3>Bucket Hat</h3>
+            <p>Time your sessions perfectly.</p>
+            <p>$15.00</p>
+            <button @click="addToCart({ id: 3, name: 'Bucket Hat', price: 15 })">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -24,25 +43,20 @@
       <!-- Cart section displaying added items and total -->
       <div id="cart">
         <h2>Your Cart</h2>
-        <!-- Show cart items if there are any -->
         <div v-if="cart.length > 0">
-          <!-- Loop through cart items and display each one -->
           <div class="cart-item" v-for="cartItem in cart" :key="cartItem.id">
             <h4>{{ cartItem.name }}</h4>
             <p>{{ formatNumber(cartItem.price) }}</p>
-            <!-- Button to remove item from cart -->
             <button @click="removeFromCart(cartItem)">Remove</button>
           </div>
-          <!-- Display the total price of the cart items -->
           <p>Total: {{ formatNumber(total) }}</p>
-          <!-- Button to initiate checkout process -->
           <button @click="checkout">Checkout</button>
         </div>
-        <!-- Message displayed if cart is empty -->
         <p v-else>Your cart is empty.</p>
       </div>
     </div>
   </template>
+  
   
   
 
@@ -52,8 +66,8 @@ export default {
   data() {
     return {
       items: [ // Array of items for sale
-        { id: 1, name: 'Bean Bag Chair', description: 'A comfy cushion for meditation.', price: 30, image: 'cushion.jpg' },
-        { id: 2, name: 'Picnic Basket', description: 'Soothing aroma for meditation.', price: 5, image: 'incense.jpg' },
+        { id: 1, name: 'Comfy Lounge Chair', description: 'A comfy cushion for meditation.', price: 30, image: 'cushion.jpg' },
+        { id: 2, name: 'Picnic Basket', description: 'Perfect for a relaxing day in the meadows.', price: 5, image: 'incense.jpg' },
         { id: 3, name: 'Bucket Hat', description: 'Time your sessions perfectly.', price: 15, image: 'timer.jpg' }
       ],
       cart: [] // Array to hold items added to the cart
