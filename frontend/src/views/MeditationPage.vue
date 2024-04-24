@@ -64,11 +64,12 @@
     transition: background-color 0.3s; 
   }
   .button:hover {
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgba(75, 75, 75, 0); 
   }
   #home-button {
     right: 5%;  
     top: 1%;
+    background-color: black;
   }
   #logout {
     left: 5%;  
