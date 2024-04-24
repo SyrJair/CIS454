@@ -1,8 +1,8 @@
 <template>
   <div id="entire-meditation-page">
     <h1 id="meditation-title">Meditate</h1>
-    <RouterLink to="/" id="logout">Logout</RouterLink>
-    <RouterLink to="/Main" id="home-button">Home</RouterLink>
+    <RouterLink to="/" id="logout" class="button">Logout</RouterLink>
+    <RouterLink to="/Main" id="home-button" class="button">Home</RouterLink>
     <!-- ENCAPSULATED CODE BELOW UPDATE WP-->
     <Carousel :items-to-show="1.5" :wrap-around="true" :autoplay="2000" id="carousel">
       <Slide v-for="slide in 10" :key="slide">
@@ -49,52 +49,53 @@
     position: absolute;
     font-weight: bold;
     padding: 5px;
+    font-size: calc(1em + 0.5vw); 
+  }
+  .button {
+    position: absolute;
+    z-index: 4;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: calc(1em + 0.2vw); 
+    padding: 10px;
+    border: none;
+    background-color: black;
+    transition: background-color 0.3s; 
+  }
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.2); 
   }
   #home-button {
-    position: absolute;
-    z-index: 4;
-    right: 5%;  /* Updated for consistency */
+    right: 5%;  
     top: 1%;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
   }
-
   #logout {
-    position: absolute;
-    z-index: 4;
-    left: 5%;  /* Updated for consistency */
+    left: 5%;  
     top: 1%;
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    font-size: 1em;
   }
-
   #carousel {
     height: 80%;
     width: 80%;
     margin-top: 10%;
   }
-
   .carousel__item {
     min-height: 200px;
     width: 100%;
-    background-color: var(--vc-clr-primary);
-    color: var(--vc-clr-white);
+    background-color: white; 
+    color: black; 
     font-size: 20px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
   .carousel__slide {
     padding: 10px;
   }
-  
   .carousel__prev, .carousel__next {
     box-sizing: content-box;
     border: 5px solid white;
   }
 </style>
+
