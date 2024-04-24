@@ -42,6 +42,8 @@
   }
 </script>
 
+
+
 <style scoped>
 /* Styling for the entire meditation page container */
   #entire-meditation-page {

@@ -1,35 +1,51 @@
 <template>
+    <!-- Main container for the shop page -->
     <div id="shop-page">
+      <!-- Balance and home navigation buttons -->
       <button id="balance-button">Balance</button>
       <h1 id="shop-title">MooMeditation Shop</h1>
       <button id="home-button">Home</button>
+      
+      <!-- Container for displaying shop items dynamically -->
       <div id="item-container">
+        <!-- Loop through items and display each one as a shop item -->
         <div class="shop-item" v-for="item in items" :key="item.id">
           <img :src="item.image" :alt="item.name" class="item-image">
           <div class="item-info">
             <h3>{{ item.name }}</h3>
             <p>{{ item.description }}</p>
             <p>{{ formatNumber(item.price) }}</p>
+            <!-- Button to add item to cart -->
             <button @click="addToCart(item)">Add to Cart</button>
           </div>
         </div>
       </div>
+      
+      <!-- Cart section displaying added items and total -->
       <div id="cart">
         <h2>Your Cart</h2>
+        <!-- Show cart items if there are any -->
         <div v-if="cart.length > 0">
+          <!-- Loop through cart items and display each one -->
           <div class="cart-item" v-for="cartItem in cart" :key="cartItem.id">
             <h4>{{ cartItem.name }}</h4>
             <p>{{ formatNumber(cartItem.price) }}</p>
+            <!-- Button to remove item from cart -->
             <button @click="removeFromCart(cartItem)">Remove</button>
           </div>
+          <!-- Display the total price of the cart items -->
           <p>Total: {{ formatNumber(total) }}</p>
+          <!-- Button to initiate checkout process -->
           <button @click="checkout">Checkout</button>
         </div>
+        <!-- Message displayed if cart is empty -->
         <p v-else>Your cart is empty.</p>
       </div>
     </div>
   </template>
   
+  
+
   <script>
   export default {
     name: 'ShopPage',
@@ -69,6 +85,8 @@
   };
   </script>
   
+
+
   <style>
   #shop-page {
     display: flex;
