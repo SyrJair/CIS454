@@ -76,15 +76,14 @@
     align-items: center;
     background-color: pink; 
   }
-  #shop-title {
-    margin: 20px 0;
-  }
   #balance-button, #home-button {
     margin: 10px;
-    padding: 10px;
+    padding: 10px 20px; 
     border: 1px solid #ccc;
     background-color: #f0f0f0;
     cursor: pointer;
+    border-radius: 15px; 
+    font-size: 1.1em; 
   }
   #balance-button {
     position: absolute;
@@ -104,6 +103,10 @@
     padding: 10px;
     margin: 10px;
     text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+    height: 100%; 
   }
   .item-image {
     max-width: 100px;
@@ -127,4 +130,5 @@
     background-color: #e0e0e0;
   }
   </style>
+  
   
