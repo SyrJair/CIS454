@@ -10,7 +10,7 @@
       <div id="item-container">
         <!-- Static display of shop items -->
         <div class="shop-item">
-          <img src="../assets/pixelHat.jpg" alt="Comfy Lounge Chair" class="item-image">
+          <img src="../assets/chairPixel.jpg" alt="Comfy Lounge Chair" class="item-image">
           <div class="item-info">
             <h3>Bean Bag Chair</h3>
             <p>A comfy cushion for meditation.</p>
