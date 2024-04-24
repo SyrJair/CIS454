@@ -2,7 +2,7 @@
     <!-- Main container for the shop page -->
     <div id="shop-page">
       <!-- Balance and home navigation buttons -->
-      <button id="balance-button">Balance</button>
+      <div id="balance-button">Balance</div>
       <h1 id="shop-title">MooMeditation Shop</h1>
       <RouterLink to="/Main" id="home-button" class="button">Home</RouterLink>
       
@@ -13,8 +13,8 @@
           <img src="../assets/chairPixel.jpg" alt="Comfy Lounge Chair" class="item-image">
           <div class="item-info">
             <h3>Bean Bag Chair</h3>
-            <p>A comfy cushion for meditation.</p>
-            <p>$30.00</p>
+            <p>Kick back'n relax!</p>
+            <p>30.00 MB</p>
             <button @click="addToCart({ id: 1, name: 'Comfy Lounge Chair', price: 30 })">Add to Cart</button>
           </div>
         </div>
@@ -23,8 +23,8 @@
           <img src="../assets/pixelBasket.jpg" alt="Picnic Basket" class="item-image">
           <div class="item-info">
             <h3>Picnic Basket</h3>
-            <p>Soothing aroma for meditation.</p>
-            <p>$5.00</p>
+            <p>Perfect for a nice day on the meadow.</p>
+            <p>5.00 MB</p>
             <button @click="addToCart({ id: 2, name: 'Picnic Basket', price: 5 })">Add to Cart</button>
           </div>
         </div>
@@ -33,8 +33,8 @@
           <img src="../assets/pixelHat.jpg" alt="Bucket Hat" class="item-image">
           <div class="item-info">
             <h3>Bucket Hat</h3>
-            <p>Time your sessions perfectly.</p>
-            <p>$15.00</p>
+            <p>Keep your head cool in style!</p>
+            <p>15.00 MB</p>
             <button @click="addToCart({ id: 3, name: 'Bucket Hat', price: 15 })">Add to Cart</button>
           </div>
         </div>
@@ -108,7 +108,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: pink; 
+    background-color:  #ffe3e2; 
   }
   #balance-button, #home-button {
     margin: 10px;
@@ -124,30 +124,48 @@ export default {
     left: 10px;
   }
   #home-button {
+    color: black; 
+    background-color: #f0f0f0; 
+    margin: 10px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.1em;
     position: absolute;
     right: 10px;
-  }
+}
   #item-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
   }
   .shop-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
+    /* Set item background to white so it doesn't clash with assets' white border */
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin: 20px; 
     text-align: center;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: space-between; 
-    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; 
   }
   .item-image {
     max-width: 100px;
     margin-bottom: 10px;
   }
+  .item-info h3 {
+    color: black;
+  }
   #cart {
-    margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px; /* Consistent styling with shop items */
   }
   .cart-item {
     border: 1px solid #ccc;
@@ -160,9 +178,9 @@ export default {
     border: none;
     cursor: pointer;
   }
-  button:hover {
-    background-color: #e0e0e0;
-  }
+  .button:hover {
+    background-color: #817979; 
+}
   </style>
   
   
