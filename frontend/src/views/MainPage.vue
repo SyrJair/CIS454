@@ -2,7 +2,7 @@
     <div class="overall-page">
         <div class="left-layout">
             <div class="username-section">
-                <h3 id="username">Username goes here</h3>
+                <h3 id="username">USERNAME SECTION </h3>
             </div>
             <div class="logout-section">
                 <button id="logout" class="button">Logout</button> <!-- Logout button -->
@@ -10,11 +10,11 @@
         </div>
         <div class="main-layout">
             <div class="main-text">
-                <h1>Welcome Back, (username)!</h1>
+                <h1>Welcome Back, (USERNAME)!</h1>
             </div>
             <div class="cow-section">
                 <img id="cow" src="../assets/PixelCowCloud1.jpg">
-                <RouterLink to="/Meditation" id="meditation-button">Meditate</RouterLink>
+                <RouterLink to="/Meditation" id="meditation-button">Go meditate!</RouterLink>
                 <!-- cow section goes here -->
             </div>
             <div class="metrics-section">
@@ -78,7 +78,7 @@
     }
     .username-section 
     {
-        background-color:black;
+        background-color:#333;
         width: 50%;
         height:13%;
         text-align:center;
@@ -102,12 +102,12 @@
     .main-layout 
     {
         justify-content:space-evenly;
-        background-color:pink;
+        background-color:rgb(134, 226, 236);
         width:40vw;
     }
     .main-text 
     {
-        background-color:pink;
+        background-color:rgb(134, 226, 236);
         width:100%;
         height:15%;
         display:flex;
@@ -124,7 +124,7 @@
     }
     .cow-section 
     {
-        background-color:black;
+        background-color:rgb(134, 226, 236);
         z-index:5;
         width:110%;
         height:50%;
@@ -146,8 +146,10 @@
         top:80%;
         left:35%;
         color:white;
+        border: none; 
+        border-radius: 0.5rem; 
         padding:5px;
-        background-color:black;
+        background-color:#333;
     }
     .balance-section, .minutes-section 
     {
