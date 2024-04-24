@@ -1,16 +1,21 @@
 <template>
+    <!-- Skip Link: Allows users to navigate to the main content -->
     <a href="#loginSection" class="skip" tabindex="-1">Skip to Content</a> 
+    
+    <!-- Parallax Background: Provides a visually appealing background effect -->
     <div class="parallax">
         <img src="../assets/tempLoginBackground.jpg" alt="peaceful sunset forest landscape">
     </div>
+    
+    <!-- Title Screen: Main title and login navigation -->
     <section class="titleScreen" id="top">
         <h1 id="title">Moo Meditations</h1>
         <div id="loginGo">
             <a href="#loginPointer"> <h2 id="loginButton">Login</h2> </a>
         </div>
-        
     </section>
     
+    <!-- Container: Main content area + login form -->
     <div class="container">
         <section class="loginSection">
             <a id="loginPointer"></a>
@@ -43,12 +48,12 @@
                             <RouterLink to="/register">Make an Account</RouterLink>
                         </div>
                     </div>
-                    
                 </form>
             </div>
         </section>
     </div>
 </template>
+
 <script>
     import { RouterLink  } from 'vue-router';
 
@@ -57,6 +62,8 @@
         RouterLink
     },
     methods: {
+        // Handles user login
+        // Incomplete code, couldn't link with back end
         login() {
         // login logic here...
         // if login is successful, navigate to MainPage
@@ -109,6 +116,7 @@
     }
 
     /* TITLE SCREEN */
+    /* Styles for title and nav button */
     .titleScreen
     {
         text-align:center;
@@ -154,6 +162,7 @@
     }
 
     /* FORM */
+    /* Styling for login. Includes inputs + labels */
     .container 
     {
         padding: 50vh 0 50vh 0;
