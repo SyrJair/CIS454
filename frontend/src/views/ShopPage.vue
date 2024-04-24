@@ -4,7 +4,7 @@
       <!-- Balance and home navigation buttons -->
       <button id="balance-button">Balance</button>
       <h1 id="shop-title">MooMeditation Shop</h1>
-      <button id="home-button">Home</button>
+      <RouterLink to="/Main" id="home-button" class="button">Home</RouterLink>
       
       <!-- Container for displaying shop items dynamically -->
       <div id="item-container">
@@ -47,47 +47,49 @@
   
 
   <script>
-  export default {
-    name: 'ShopPage',
-    data() {
-      return {
-        items: [
-          { id: 1, name: 'Bean Bag Chair', description: 'A comfy cushion for meditation.', price: 30, image: 'cushion.jpg' },
-          { id: 2, name: 'Picnic Basket', description: 'Soothing aroma for meditation.', price: 5, image: 'incense.jpg' },
-          { id: 3, name: 'Bucket Hat', description: 'Time your sessions perfectly.', price: 15, image: 'timer.jpg' }
-        ],
-        cart: []
-      };
+export default {
+  name: 'ShopPage', // Component name
+  data() {
+    return {
+      items: [ // Array of items for sale
+        { id: 1, name: 'Bean Bag Chair', description: 'A comfy cushion for meditation.', price: 30, image: 'cushion.jpg' },
+        { id: 2, name: 'Picnic Basket', description: 'Soothing aroma for meditation.', price: 5, image: 'incense.jpg' },
+        { id: 3, name: 'Bucket Hat', description: 'Time your sessions perfectly.', price: 15, image: 'timer.jpg' }
+      ],
+      cart: [] // Array to hold items added to the cart
+    };
+  },
+  methods: {
+    addToCart(item) { // Method to add an item to the cart
+      this.cart.push(item);
     },
-    methods: {
-      addToCart(item) {
-        this.cart.push(item);
-      },
-      removeFromCart(item) {
-        const index = this.cart.findIndex(cartItem => cartItem.id === item.id);
-        if (index !== -1) {
-          this.cart.splice(index, 1);
-        }
-      },
-      checkout() {
-        alert('Thank you for your purchase!');
-        this.cart = [];
-      },
-      formatNumber(value) {
-        return value.toFixed(2);
+    removeFromCart(item) { // Method to remove an item from the cart
+      const index = this.cart.findIndex(cartItem => cartItem.id === item.id);
+      if (index !== -1) {
+        this.cart.splice(index, 1);
       }
     },
-    computed: {
-      total() {
-        return this.cart.reduce((sum, item) => sum + item.price, 0);
-      }
+    checkout() { // Method to handle checkout process
+      alert('Thank you for your purchase!');
+      this.cart = []; // Clear cart after purchase
+    },
+    formatNumber(value) { // Method to format numbers as currency
+      return value.toFixed(2);
     }
-  };
-  </script>
+  },
+  computed: {
+    total() { // Computed property to calculate total price of cart items
+      return this.cart.reduce((sum, item) => sum + item.price, 0);
+    }
+  }
+};
+</script>
+
   
 
 
   <style>
+  /* BACKGROUND + POSITIONING DETAILS BELOW HERE */
   #shop-page {
     display: flex;
     flex-direction: column;
