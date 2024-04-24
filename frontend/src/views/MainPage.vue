@@ -7,7 +7,11 @@
                 <h3 id="username">USERNAME SECTION</h3> <!-- Displays the username -->
             </div>
             <div class="logout-section">
-                <button id="logout" class="button">Logout</button> <!-- Logout button -->
+                <!-- README: This logout button uses RouterLink-->
+                <!-- We used RouterLink here because of its simplicity-->
+                <!-- In a more applicable situation the logout button would have more strings attached-->
+                <!-- This is because you would have to clear user data, invalidate sessions, and follow other security practices -->
+                <RouterLink to="/" id="logout" class="button">Logout</RouterLink> <!-- Logout button -->
             </div>
         </div>
         <!-- Main Layout: Central Content Area -->

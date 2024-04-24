@@ -88,7 +88,7 @@ export default {
   
 
 
-  <style>
+<style>
   /* BACKGROUND + POSITIONING DETAILS BELOW HERE */
   #shop-page {
     display: flex;
