@@ -28,7 +28,7 @@
         </div>
         <div class="right-layout">
             <div class="shop-section">
-                <button id="shop" class="button">Shop</button> <!-- Shop button -->
+                <RouterLink to="/Shop" id="shop" class="button">Shop</RouterLink> <!-- Shop button -->
             </div>
         </div>
     </div>
@@ -161,7 +161,7 @@
         height:60%;
     }
     
-    /* Button styling */
+    
     .button {
         background-color: #333; 
         color: white; 
@@ -176,7 +176,7 @@
         margin: 1rem auto; 
     }
 
-    /* Button hover effect (darken button) */
+    
     .button:hover {
         background-color: #555; 
     }
