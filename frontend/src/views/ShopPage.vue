@@ -6,7 +6,8 @@
       <h1 id="shop-title">MooMeditation Shop</h1>
       <RouterLink to="/Main" id="home-button" class="button">Home</RouterLink>
       
-      <!-- Container for displaying shop items statically -->
+      <div id="item-list">
+        <!-- Container for displaying shop items statically -->
       <div id="item-container">
         <!-- Static display of shop items -->
         <div class="shop-item">
@@ -38,6 +39,8 @@
             <button @click="addToCart({ id: 3, name: 'Bucket Hat', price: 15 })">Add to Cart</button>
           </div>
         </div>
+      </div>
+      
       </div>
       
       <!-- Cart section displaying added items and total -->
@@ -109,9 +112,16 @@ export default {
     flex-direction: column;
     align-items: center;
     background-color:  #ffe3e2; 
+    height:100vh;
+    padding-top:20px;
+  }
+  #shop-title 
+  {
+    margin-top:20px;
+    font-weight:bold;
+    font-size:3em;
   }
   #balance-button, #home-button {
-    margin: 10px;
     padding: 10px 20px; 
     border: 1px solid #ccc;
     background-color: #f0f0f0;
@@ -121,7 +131,9 @@ export default {
   }
   #balance-button {
     position: absolute;
-    left: 10px;
+    left: 15px;
+    top:10px;
+    margin:10px;
   }
   #home-button {
     color: black; 
@@ -133,7 +145,12 @@ export default {
     border-radius: 15px;
     font-size: 1.1em;
     position: absolute;
-    right: 10px;
+    right: 15px;
+    top:15px;
+}
+#item-list 
+{
+    margin-top:5%;
 }
   #item-container {
     display: flex;
