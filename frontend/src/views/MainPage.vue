@@ -4,7 +4,7 @@
         <!-- Left Layout: User Information and Actions -->
         <div class="left-layout">
             <div class="username-section">
-                <h3 id="username">USERNAME SECTION</h3> <!-- Displays the username -->
+                <h3 id="username">Username</h3> <!-- Displays the username -->
             </div>
             <div class="logout-section">
                 <!-- README: This logout button uses RouterLink-->
@@ -103,17 +103,23 @@ export default {
         background-image: url('../assets/cloud_LEFT.jpg'); 
         background-size: cover;
     }
+    #username 
+    {
+        font-size:1.2em;
+    }
 
     /* README: Username Section - Style for username display area */
     .username-section {
         background-color: #333;
-        width: 50%;
-        height: 13%;
+        width: 30%;
+        height: 8%;
         text-align: center;
         display: flex;
         justify-content: center;
         flex-direction: column;
         border-radius: 5%;
+        margin-top:20px;
+        padding-top:3px;
     }
 
     /* README: Right Layout Background - Specific background styles for the right layout area */
