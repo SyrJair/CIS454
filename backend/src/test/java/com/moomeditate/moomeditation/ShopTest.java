@@ -1,4 +1,4 @@
-package com;
+package com.moomeditate.moomeditation;
 
 import org.junit.Test;
 
