@@ -7,6 +7,9 @@ import com.moomeditate.moomeditation.Hat;
 import static org.junit.Assert.*;
 
 // Unit test class for Hat
+// README 
+// For the hat in the shop page
+// This unit test may not be used 
 public class HatTest {
 
     @Test

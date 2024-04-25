@@ -42,6 +42,27 @@
     </div>
 </template>
 <script>
+export default {
+    data() {
+        return {
+            username: 'User',
+            // README:
+            // Abstraction: HTML content for the user section abstracted into a data property for potential reuse
+            userSectionTemplate: `
+                <div class="username-section">
+                    <h3 id="username">{{ username.toUpperCase() }}</h3>
+                </div>
+            `
+        };
+    },
+    computed: {
+        // Abstraction: Capitalizing username for display in greeting area
+        // Abstraction code below WP
+        displayName() {
+            return this.username.toUpperCase();
+        }
+    }
+};
     //function removeButton()
     //{ tbd on this one
     // document.getElementById("play-button-section").style.display="None"; 
