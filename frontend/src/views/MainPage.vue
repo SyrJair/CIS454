@@ -174,7 +174,7 @@ export default {
         text-align: center;
         text-decoration: none;
         top: 80%;
-        left: 35%;
+        left: 30%;
         color: white;
         border: none; 
         border-radius: 0.5rem; 
