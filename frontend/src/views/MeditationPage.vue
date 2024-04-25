@@ -22,7 +22,6 @@
     </template>
   </Carousel>
 </div>
-
 </template>
 
 
@@ -41,7 +40,6 @@ export default {
     Navigation
   },
 }
-
 </script>
 
 
