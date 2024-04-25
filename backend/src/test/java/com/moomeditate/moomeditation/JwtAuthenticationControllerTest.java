@@ -49,7 +49,7 @@ public class JwtAuthenticationControllerTest {
     public void testAuthenticate_ValidCredentials() throws Exception {
         // Arrange
         String username = "testuser";
-        String password = "testpass";
+        String password = "PasswordTest";
         String jwt = "valid-jwt-token";
 
         UserDetails userDetails = mock(UserDetails.class);
