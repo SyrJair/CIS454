@@ -48,7 +48,7 @@ public class JwtAuthenticationControllerTest {
     @Test
     public void testAuthenticate_ValidCredentials() throws Exception {
         // Arrange
-        String username = "testuser";
+        String username = "test_user";
         String password = "PasswordTest";
         String jwt = "valid-jwt-token";
 
