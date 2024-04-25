@@ -7,6 +7,9 @@ import com.moomeditate.moomeditation.Item;
 import static org.junit.Assert.*;
 
 // Unit test class for Item
+// README
+// This is unit testing for the shop page
+
 public class ItemTest {
     @Test
     public void testItemCreation() {

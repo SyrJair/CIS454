@@ -47,7 +47,9 @@ public class JwtAuthenticationControllerTest {
 
     @Test
     public void testAuthenticate_ValidCredentials() throws Exception {
-        // Arrange
+        //README
+        // Unit testing for user login at the login page
+        // This is what we are using to test user login with these generic case
         String username = "test_user";
         String password = "PasswordTest";
         String jwt = "valid-jwt-token";
