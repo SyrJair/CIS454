@@ -154,11 +154,12 @@
         font-size:2.5em;
         background-color: rgb(15, 22, 38, 0.5);
         border-radius:20px;
-        padding: 0px 18px 0px 18px;
+        padding: 0px 30px 0px 30px;
         border: 1px solid black;
     }
     #loginGo a 
     {
+        padding-top:5px;
         text-decoration: none;
         text-align: center;
         color: #f5f5f5c1;
@@ -208,8 +209,8 @@
     }
     .bottom h3 
     {
-        margin-top:2%;
-        font-size:2em;
+        margin-top:-15%;
+        font-size:1em;
         color:#f5f5f5;
         font-weight:lighter;
         padding-bottom:20px;
