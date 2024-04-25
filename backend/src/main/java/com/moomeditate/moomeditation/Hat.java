@@ -29,6 +29,10 @@ public class Hat extends Item {
         return image;
     }
 
+    public String getItemName(){
+        return itemName + " hat";
+    }
+
     // Getter for xCoordinate
     public int getXCoordinate() {
         return xCoordinate;
